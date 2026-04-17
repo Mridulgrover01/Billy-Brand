@@ -32,7 +32,7 @@ app.post("/contact", async (req, res) => {
     await transporter.sendMail({
       from: "Billy Brand <mridulgrover59@gmail.com>",
       replyTo: email,
-      to: "mridulgrover09@outlook.com",
+      to: "BillyBrand09@outlook.com",
       subject: "New Contact Form Message",
       text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${message}`,
     });
