@@ -255,7 +255,7 @@ if (form) {
     };
 
     try {
-      const res = await fetch("https://billy-backend-t27b.onrender.com/contact", {
+      const res = await fetch("https://billy-backend-v4ti.onrender.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
