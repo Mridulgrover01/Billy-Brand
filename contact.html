@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Billy Brand</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JS -->
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="container">
+      <nav class="nav">
+
+       <a class="logo" href="index.html">
+  <img src="images/logo.png" alt="Billy Brand Logo">
+</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="products.html">Products</a>
+          <a href="team.html">Our Team</a>
+          <a class="active" href="contact.html">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="products.html" class="btn btn-gold">View Products</a>
+          <a href="contact.html" class="btn btn-green">Contact Now</a>
+        </div>
+
+        <button class="menu-toggle" data-menu-toggle>☰</button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" data-mobile-menu>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="team.html">Our Team</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- HERO -->
+    <section class="page-hero">
+      <div class="container page-banner reveal visible">
+        <h1>Contact Billy Brand</h1>
+        <p>
+          Reach out for product inquiries, distribution, or order support.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section">
+      <div class="container contact-grid">
+
+        <!-- FORM -->
+        <div class="info-card reveal">
+          <h2>Send Us a Message</h2>
+
+          <!-- IMPORTANT: action add kiya -->
+          <form action="#" method="POST">
+
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input id="name" name="name" type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input id="phone" name="phone" type="tel" placeholder="Enter your number" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input id="email" name="email" type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us what you need" required></textarea>
+            </div>
+
+            <button class="btn btn-gold" type="submit">
+              Submit Inquiry
+            </button>
+
+          </form>
+        </div>
+
+        <!-- INFO -->
+        <div class="info-card reveal">
+          <h3>Contact Information</h3>
+
+          <ul class="list-clean">
+            <li><strong>Brand:</strong> Billy Brand</li>
+            <li><strong>Location:</strong> Dhanaula Phatak, Barnala, India</li>
+            <li><strong>Categories:</strong> Cleaning, Ayurvedic Care, Food & Spices</li>
+            <li><strong>Support:</strong> WhatsApp available</li>
+          </ul>
+
+          <!-- BUTTONS -->
+          <div style="margin-top:20px; display:flex; gap:12px; flex-wrap:wrap;">
+
+            <a class="btn btn-green"
+              href="https://wa.me/919815714574?text=Hello%20Billy%20Brand%2C%20I%20want%20to%20know%20more%20about%20your%20products"
+              target="_blank" rel="noopener noreferrer">
+              Chat on WhatsApp
+            </a>
+
+            <a class="btn btn-outline" href="products.html">
+              Browse Products
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>Dhanaula Phatak, Barnala, India</div>
+      <div>Billy Brand Contact Desk</div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | Billy Brand</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JS -->
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="container">
+      <nav class="nav">
+
+        <a class="logo" href="index.html">
+  <img src="images/logo.png" alt="Billy Brand Logo">
+</a>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a class="active" href="products.html">Products</a>
+          <a href="team.html">Our Team</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="products.html" class="btn btn-gold">View Products</a>
+          <a href="contact.html" class="btn btn-green">Contact Now</a>
+        </div>
+
+        <button class="menu-toggle" data-menu-toggle>☰</button>
+
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" data-mobile-menu>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="team.html">Our Team</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- HERO -->
+    <section class="page-hero">
+      <div class="container page-banner reveal visible">
+        <h1>Our Product Portfolio</h1>
+        <p>
+          Explore Billy Brand’s cleaning, ayurvedic care, and food product categories.
+        </p>
+      </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section class="section">
+      <div class="container">
+
+        <!-- RANGE BOXES -->
+        <div class="range-boxes reveal">
+
+          <div class="range-box">
+            <h3>Cleaning Range</h3>
+            <ul>
+              <li>Liquid</li>
+              <li>Gel</li>
+              <li>Spray</li>
+              <li>Stain Remover</li>
+            </ul>
+          </div>
+
+          <div class="range-box">
+            <h3>Amla Range</h3>
+            <ul>
+              <li>Amla Powder</li>
+              <li>Amla Mix</li>
+              <li>Amla &amp; Shikakai</li>
+            </ul>
+          </div>
+
+          <div class="range-box">
+            <h3>Kitchen Range</h3>
+            <ul>
+              <li>Tea Masala</li>
+              <li>Fruit Chaat Masala</li>
+              <li>Black Salt</li>
+              <li>Sendha Namak</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- FILTER -->
+        <div class="filter-bar reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="cleaning">Cleaning Products</button>
+          <button class="filter-btn" data-filter="care">Ayurvedic & Hair Care</button>
+          <button class="filter-btn" data-filter="food">Food & Spices</button>
+        </div>
+
+        <!-- PRODUCTS GRID -->
+        <div class="products-grid">
+
+          <!-- CLEANING -->
+          <article class="product-card reveal" data-category="cleaning">
+            <img src="images/Floor-Cleaner-Large.jpg" alt="Floor Cleaner">
+            <h4>Floor Cleaner</h4>
+            <p>Fresh and effective floor-care solution.</p>
+            <a class="btn btn-outline" href="product-detail.html?product=floor-cleaner">View Details</a>
+          </article>
+
+          <article class="product-card reveal" data-category="cleaning">
+            <img src="images/Toilet-Cleaner-Large.jpg" alt="Toilet Cleaner">
+            <h4>Toilet Cleaner</h4>
+            <p>Strong cleaning and hygiene support.</p>
+            <a class="btn btn-outline" href="product-detail.html?product=toilet-cleaner">View Details</a>
+          </article>
+
+          <article class="product-card reveal" data-category="cleaning">
+            <img src="images/Glass-Cleaner-Large.jpg" alt="Glass Cleaner">
+            <h4>Glass Cleaner</h4>
+            <p>Quick-clean spray for glass surfaces.</p>
+            <a class="btn btn-outline" href="product-detail.html?product=glass-cleaner">View Details</a>
+          </article>
+
+          <article class="product-card reveal" data-category="cleaning">
+            <img src="images/Dishwash-Liquid.jpg" alt="Dishwash Liquid">
+            <h4>Dishwash Liquid</h4>
+            <p>Lemon-powered cleaning for utensils.</p>
+            <a class="btn btn-outline" href="product-detail.html?product=dishwash-liquid">View Details</a>
+          </article>
+
+          <article class="product-card reveal" data-category="cleaning">
+            <img src="images/Phenyl-Concentrate.jpg" alt="Phenyl">
+            <h4>Phenyl</h4>
+            <p>Daily hygiene cleaning solution.</p>
+            <a class="btn btn-outline" href="product-detail.html?product=phenyl">View Details</a>
+          </article>
+
+          <article class="product-card reveal" data-category="cleaning">
+            <img src="images/Rangkaat.jpg" alt="Rang Kaat">
+            <h4>Rang Kaat</h4>
+            <p>Powerful stain remover solution.</p>
+            <a class="btn btn-outline" href="product-detail.html?product=rang-kaat">View Details</a>
+          </article>
+
+          <!-- CARE -->
+          <article class="product-card reveal" data-category="care">
+            <img src="images/Amla-Powder.jpg" alt="Amla Powder">
+            <h4>Amla Powder</h4>
+            <p>Natural hair-care powder.</p>
+            <a class="btn btn-outline" href="product-detail.html?product=amla-powder">View Details</a>
+          </article>
+
+          <article class="product-card reveal" data-category="care">
+            <img src="images/Reetha-Pack.jpg" alt="Shikakai Powder">
+            <h4>Shikakai Powder</h4>
+            <p>Herbal cleansing powder.</p>
+            <a class="btn btn-outline" href="product-detail.html?product=shikakai-powder">View Details</a>
+          </article>
+
+          <article class="product-card reveal" data-category="care">
+            <img src="images/Reetha-Powder.jpg" alt="Reetha Powder">
+            <h4>Reetha Powder</h4>
+            <p>Natural herbal care product.</p>
+            <a class="btn btn-outline" href="product-detail.html?product=reetha-powder">View Details</a>
+          </article>
+
+          <article class="product-card reveal" data-category="care">
+            <img src="images/Multani-Mitti.jpg" alt="Multani Mitti">
+            <h4>Multani Mitti</h4>
+            <p>Deep-cleansing skin care.</p>
+            <a class="btn btn-outline" href="product-detail.html?product=multani-mitti">View Details</a>
+          </article>
+
+          <article class="product-card reveal" data-category="care">
+            <img src="images/Triphala-Powder.jpg" alt="Triphala Powder">
+            <h4>Triphala Powder</h4>
+            <p>Ayurvedic wellness product.</p>
+            <a class="btn btn-outline" href="product-detail.html?product=triphala-powder">View Details</a>
+          </article>
+
+          <!-- FOOD -->
+          <article class="product-card reveal" data-category="food">
+            <img src="images/Tea-Masala.jpg" alt="Tea Masala">
+            <h4>Tea Masala</h4>
+            <p>Rich aromatic spice blend.</p>
+            <a class="btn btn-outline" href="product-detail.html?product=tea-masala">View Details</a>
+          </article>
+
+          <article class="product-card reveal" data-category="food">
+            <img src="images/Fruit-Chaat-Masala.jpg" alt="Fruit Chaat Masala">
+            <h4>Fruit Chaat Masala</h4>
+            <p>Bold chatpata taste enhancer.</p>
+            <a class="btn btn-outline" href="product-detail.html?product=fruit-chaat-masala">View Details</a>
+          </article>
+
+          <article class="product-card reveal" data-category="food">
+            <img src="images/Black-Salt.jpg" alt="Black Salt">
+            <h4>Black Salt</h4>
+            <p>Strong flavor kitchen staple.</p>
+            <a class="btn btn-outline" href="product-detail.html?product=black-salt">View Details</a>
+          </article>
+
+          <article class="product-card reveal" data-category="food">
+            <img src="images/Sendha-Namak.jpg" alt="Sendha Namak">
+            <h4>Sendha Namak</h4>
+            <p>Pure natural rock salt.</p>
+            <a class="btn btn-outline" href="product-detail.html?product=sendha-namak">View Details</a>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>Explore all categories.</div>
+      <div>Billy Brand FMCG Portfolio</div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
