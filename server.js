@@ -16,8 +16,8 @@ app.get("/", (req, res) => {
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "yourgmail@gmail.com",
-    pass: "your_app_password",
+    user: "mridulgrover59@gmail.com",
+    pass: "1809",
   },
 });
 
@@ -27,7 +27,7 @@ app.post("/contact", async (req, res) => {
 
   try {
   await transporter.sendMail({
-  from: "Billy Brand <yourgmail@gmail.com>",
+  from: "Billy Brand <mridulgrover59@gmail.com>",
   replyTo: email,
   to: "mridulgrover9@outlook.com",
   subject: "New Contact Form Message",
