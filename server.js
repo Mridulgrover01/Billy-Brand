@@ -23,22 +23,25 @@ const transporter = nodemailer.createTransport({
 
 // POST API
 app.post("/contact", async (req, res) => {
+  console.log("🔥 API HIT");
+  console.log(req.body);
+
   const { name, phone, email, message } = req.body;
 
   try {
-  await transporter.sendMail({
-  from: "Billy Brand <mridulgrover59@gmail.com>",
-  replyTo: email,
-  to: "mridulgrover9@outlook.com",
-  subject: "New Contact Form Message",
-  text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${message}`,
-});
-    res.json({ success: true, message: "Email sent ✅" });
+    await transporter.sendMail({
+      from: "Billy Brand <mridulgrover59@gmail.com>",
+      replyTo: email,
+      to: "mridulgrover9@outlook.com",
+      subject: "New Contact Form Message",
+      text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${message}`,
+    });
+
+    console.log("✅ EMAIL SENT");
+    res.json({ success: true });
+
   } catch (error) {
-    console.log(error);
-    res.json({ success: false, message: "Error ❌" });
+    console.log("❌ ERROR:", error);
+    res.status(500).json({ success: false });
   }
-});
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
 });
