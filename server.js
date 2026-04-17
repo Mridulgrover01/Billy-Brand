@@ -17,8 +17,8 @@ const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "mridulgrover59@gmail.com",
-    pass: "mgtkdswybilecrly",
-  },
+    pass: "mgtkdswybilecrly" // no spaces
+  }
 });
 
 // POST API
@@ -44,4 +44,8 @@ app.post("/contact", async (req, res) => {
     console.log("❌ ERROR:", error);
     res.status(500).json({ success: false });
   }
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
